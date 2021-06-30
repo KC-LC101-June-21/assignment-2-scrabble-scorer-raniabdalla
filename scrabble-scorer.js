@@ -78,9 +78,9 @@ const scoringAlgorithms = [
 function scorerPrompt(word) {
     let scoringAlgorithm = input.question('Which scoring algorithm  would you like to use?\n\n 0 - Simple: One point per character\n 1 - Vowel Bonus: Vowels are worth 3 points\n 2 - Scrabble: Uses scrabble point system\n Enter 0, 1, or 2: ');
 
-    while (scoringAlgorithm != 0 && scoringAlgorithm != 1 && scoringAlgorithm != 2){
-     scoringAlgorithm = input.question('invalid input! please enter 0, 1, or 2:')
-   }
+  //   while (scoringAlgorithm != 0 && scoringAlgorithm != 1 && scoringAlgorithm != 2){
+  //    scoringAlgorithm = input.question('invalid input! please enter 0, 1, or 2:')
+  //  }
     console.log("algorithm name: ", scoringAlgorithms[scoringAlgorithm].Name);
     console.log("Score for " + "'" + word + "'"+ ":" + scoringAlgorithms[scoringAlgorithm].scoreFunction(word));
  
