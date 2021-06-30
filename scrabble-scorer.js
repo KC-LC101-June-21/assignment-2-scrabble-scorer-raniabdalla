@@ -88,7 +88,6 @@ function scorerPrompt(word) {
 
 function transform(oldPointStructure) {
   let newPoints={};
-  let j=0;
  	for (const property in oldPointStructure){
       for (let i=0; i<oldPointStructure[property].length; i++){
          newPoints[oldPointStructure[property][i]]= property;
